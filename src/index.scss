@@ -73,9 +73,42 @@ h6 {
   font-weight: 400;
 }
 
+// backgrounds
+
+main.default {
+  background-image: url(./assets/backgrounds/default.jpg);
+}
+
+main.Atmosphere {
+  background-image: url(./assets/backgrounds/atmosphere.jpg);
+}
+
+main.Clear {
+  background-image: url(./assets/backgrounds/clear.jpg);
+}
+
+main.Clouds {
+  background-image: url(./assets/backgrounds/clouds.jpg);
+}
+
+main.Drizzle {
+  background-image: url(./assets/backgrounds/drizzle.jpg);
+}
+
+main.Rain {
+  background-image: url(./assets/backgrounds/rain.jpg);
+}
+
+main.Snow {
+  background-image: url(./assets/backgrounds/snow.jpg);
+}
+
+main.Thunderstorm {
+  background-image: url(./assets/backgrounds/thunderstorm.jpg);
+}
+
 main {
   min-height: 100vh;
-  background-image: url(./img/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -95,6 +128,7 @@ main {
     padding: 0px 10px;
   }
 }
+
 .wrapper {
   display: flex;
   padding: 50px 30px;
@@ -106,91 +140,5 @@ main {
   @media (max-width: 670px) {
     flex-wrap: wrap;
     padding: 10px;
-  }
-}
-
-.city {
-  margin-right: 50px;
-  flex: 0 0 250px;
-  @media (max-width: 670px) {
-    flex: 1 1 100%;
-    text-align: center;
-    margin-right: 0;
-  }
-  &__name {
-    font-size: 50px;
-    font-weight: 700;
-    text-shadow: 3px 3px #000;
-    margin-bottom: 20px;
-    word-break: break-all;
-    @media (max-width: 670px) {
-      font-size: 30px;
-    }
-  }
-
-  &__name-input {
-    display: flex;
-    width: 100%;
-    & input {
-      padding: 10px 30px 10px 10px;
-      border-radius: 5px 0px 0px 5px;
-      width: 100%;
-      transition: 0.3s;
-      font-size: 18px;
-      &:hover,
-      &:focus {
-        background-color: #f2f2f2;
-      }
-    }
-    & button {
-      border-radius: 0px 5px 5px 0px;
-      padding: 10px;
-      font-size: 18px;
-      background-color: #7c7b7b;
-      color: #fff;
-      transition: 0.3s ease-in-out;
-      &:hover {
-        color: #fff;
-        background-color: #2f2f2f;
-      }
-      @media (max-width: 670px) {
-        padding: 15px;
-      }
-    }
-  }
-}
-
-.weather {
-  flex: 1;
-  align-self: flex-start;
-  @media (max-width: 670px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  &__about {
-    font-size: 45px;
-    margin-bottom: 20px;
-    font-weight: 500;
-  }
-
-  &__icon {
-    & svg {
-      width: 150px;
-      height: 150px;
-      fill: #fff;
-    }
-  }
-
-  &__date {
-    font-size: 30px;
-    letter-spacing: 1px;
-    margin-bottom: 12px;
-  }
-
-  &__temperature {
-    letter-spacing: 1px;
-    font-size: 30px;
   }
 }

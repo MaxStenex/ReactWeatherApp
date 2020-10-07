@@ -1,0 +1,36 @@
+.weather {
+  flex: 1;
+  align-self: flex-start;
+  @media (max-width: 670px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__about {
+    font-size: 45px;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+
+  &__icon {
+    & img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  &__date {
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    @media (max-width: 670px) {
+      text-align: center;
+    }
+  }
+
+  &__temperature {
+    letter-spacing: 1px;
+    font-size: 30px;
+  }
+}
