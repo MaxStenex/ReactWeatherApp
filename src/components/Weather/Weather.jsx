@@ -54,7 +54,7 @@ const Weather = (props) => {
       <div className='weather__icon'>
         <img
           src={!props.sky ? defaultIcon : weatherIcons[props.sky]}
-          alt='weather'
+          alt='weather-icon'
         />
       </div>
       <div className='weather__about'>{props.sky}</div>
